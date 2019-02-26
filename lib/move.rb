@@ -8,14 +8,14 @@ end
 
 # code your input_to_index and move method here!
 
+  # input_to_index -take in player's position and indexes as int
+
 def input_to_index(str)
   str.to_i - 1
 end
 
-
+  # move - indexes player's move and returns new board array
 
 def move(board, input_to_index, player_character = "X")
-
   board[input_to_index] = "#{player_character}"
-
 end
